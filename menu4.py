@@ -49,11 +49,27 @@ menu = {
         "Fried banana": 4.49
     }
 }
+# Empty order list to store 
+# empty_order_list = [
+#   {
+#     "Item name": "string",
+#     "Price": float,
+#     "Quantity": int
+#   },
+#   {
+#     "Item name": "string",
+#     "Price": float,
+#     "Quantity": int
+#   },
+# ]
+
+
+empty_order_list = []
 
 # 1. Set up order list. Order list will store a list of dictionaries for
 # menu item name, item price, and quantity ordered
-
 def order_list(item_name, price, quantity):
+
 
 # Launch the store and present a greeting to the customer
     print("Welcome to the variety food truck.")
@@ -77,7 +93,7 @@ while place_order:
         # Store the menu category associated with its menu item number
         menu_items[i] = key
         # Add 1 to the menu item number
-        i= i + 1 
+        i += 1
 
     # Get the customer's input
     menu_category = input("Type menu number: ")
@@ -119,19 +135,30 @@ while place_order:
                     }
                     i += 1
             # 2. Ask customer to input menu item number
-
+                menu_selection = (input("What is the menu number of the item you would like ?"))
 
             # 3. Check if the customer typed a number
-
+                if menu_selection.isdigit():
+                    print(f"The selection is a number")
+                else:
+                    print(" Error input was not a number!")
                 # Convert the menu selection to an integer
-
+                menu_selection = int(menu_selection)
+                print(f"Customer has selected: {menu_selection}")
 
                 # 4. Check if the menu selection is in the menu items
+                for menu_selection in menu_items
+                    if menu_selection == menu_items
+                        empty_order_list.append(menu_selection)
 
                     # Store the item name as a variable
 
 
+
+
                     # Ask the customer for the quantity of the menu item
+                    quanityinput("How many")
+
 
 
                     # Check if the quantity is a number, default to 1 if not

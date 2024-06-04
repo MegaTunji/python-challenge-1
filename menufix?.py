@@ -51,6 +51,20 @@ menu = {
 }
 
 order_dashes = '-' * 50
+
+
+order_list = [
+  {
+    "Item name": "string",
+    "Price": float,
+    "Quantity": int
+  },
+  {
+    "Item name": "string",
+    "Price": float,
+    "Quantity": int
+  },
+]
 # 1. Set up order list. Order list will store a list of dictionaries for
 # menu item name, item price, and quantity ordered
 
@@ -217,25 +231,15 @@ while place_order:
 print(order_list)
 
 fixed_width = 30
-order_list = ['item_name', 'price', 'Quantity']
 
-
-def order_list['item_name', 'price', 'Quantity']:
-    return item_name +  price * quantity
-
-result = (item_name + value2 * quantity)
-print(result)
         
  # Calculation of space needed
 num_spaces = fixed_width - len(item_name)
 
-formatted_receipt_line = input(f' This is your order recept: {item_name} + {value2} * {quantity}')
-
-print(formatted_receipt_line)
 
 # 11. Calculate the cost of the order using list comprehension
 total_cost = 0
-for item_name, quantity in menu():
+for item_name, value in menu():
                     if item_name in menu:
                          price = menu[ item_name]
                          total_cost = price * quantity

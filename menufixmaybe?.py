@@ -51,6 +51,20 @@ menu = {
 }
 
 order_dashes = '-' * 50
+
+
+order_list = [
+  {
+    "Item name": "string",
+    "Price": float,
+    "Quantity": int
+  },
+  {
+    "Item name": "string",
+    "Price": float,
+    "Quantity": int
+  },
+]
 # 1. Set up order list. Order list will store a list of dictionaries for
 # menu item name, item price, and quantity ordered
 
@@ -169,12 +183,13 @@ while place_order:
             # Order list
 
             order_list.append({
-                "item_name": item_name,
-                "price": value2,
+                "Item name": item_name,
+                 "Price": value,
                 "Quantity": quantity
             })
        
 
+     
 
         # Tell the customer that their input isn't valid
         # Tell the customer they didn't select a menu option
@@ -217,29 +232,20 @@ while place_order:
 print(order_list)
 
 fixed_width = 30
-order_list = ['item_name', 'price', 'Quantity']
 
-
-def order_list['item_name', 'price', 'Quantity']:
-    return item_name +  price * quantity
-
-result = (item_name + value2 * quantity)
-print(result)
         
  # Calculation of space needed
 num_spaces = fixed_width - len(item_name)
 
-formatted_receipt_line = input(f' This is your order recept: {item_name} + {value2} * {quantity}')
-
-print(formatted_receipt_line)
 
 # 11. Calculate the cost of the order using list comprehension
 total_cost = 0
-for item_name, quantity in menu():
-                    if item_name in menu:
+for item_name, quantity in order_list():
+                    if item_name in order_list:
                          price = menu[ item_name]
-                         total_cost = price * quantity
-                         total_order_list_cost = sum({order_list[price] for order_list in order_lists})
+                         total_cost = item_name * quantity
+                         total_order_list_cost = total_cost
+                         print(f"Hey thank you for ordering with us, you owe:" (total_cost))
 # Multiply the price by quantity for each item in the order list, then sum()
 # and print the prices.
                          final_cost = sum(item_name * quantity)

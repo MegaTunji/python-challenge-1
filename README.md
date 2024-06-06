@@ -1,7 +1,7 @@
 Please refer to the finish_product file.
 "TUNJI's Food Truck"
 Introduction
-Welcome to Tunji's Food Truck! Our sole purpose is to satisfy that craving and silince that grumbling in your stomach with or vast menu option.
+Welcome to Tunji's Food Truck! Our sole purpose is to satisfy that craving and silence that grumbling in your stomach with or vast menu option.
 
 Menu:
 "Snacks":"Cookie": .99,"Banana": .69,"Apple": .49,"Granola bar": 1.99

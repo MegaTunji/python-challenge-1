@@ -1,4 +1,4 @@
-Menu dictionary
+#menu dictionary
 menu = {
     "Snacks": {
         "Cookie": .99,
